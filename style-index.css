@@ -1,0 +1,139 @@
+
+
+
+head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  margin: 0;
+}
+
+.zayuumei-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.button img {
+  transition: transform 0.3s ease-out; /* 확대 효과 */
+}
+
+.neon-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;  /* 원의 크기 - 이미지보다 약간 크게 설정 */
+  height: 500px;
+  border-radius: 50%; /* 원 모양 */
+  background-color: rgba(255, 255, 255, 0.55); /* 안쪽을 거의 불투명한 흰색으로 채움 */
+  box-shadow: 
+    0 0 40px rgba(255, 255, 255, 0.5),  /* 가까운 빛 */
+    0 0 50px rgba(255, 255, 255, 0.4),  /* 중간 거리 빛 */
+    0 0 100px rgba(255, 255, 255, 0.3),  /* 더 멀리 퍼지는 빛 */
+    0 0 150px rgba(255, 255, 255, 0.2);  /* 가장 멀리 퍼지는 빛 */
+  z-index: -1; /* 원이 이미지 뒤로 가도록 설정 */  
+}
+
+.button:hover img {
+  transform: scale(1.15); /* 이미지 확대 */
+}
+/* 
+header {
+  background-color: #698aa8;
+  position: fixed; /* 고정 위치 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 다른 콘텐츠 위에 보이도록 설정
+  padding: 10px 20px;
+  display: flex; /* flexbox로 자식 요소들을 정렬 
+  justify-content: space-between; /* 왼쪽과 오른쪽에 요소 배치
+  align-items: center; /* 세로로 가운데 정렬
+} */
+/* 
+header .title h1 {
+  color: white;
+  font-size: 24px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-right: auto;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+nav{
+  display: flex;
+  justify-self: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  margin-left: 100px;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffe341; 
+  transform: scale(1.2);
+}
+
+.foraside{
+  display: flex;
+  padding: 20px;
+} */
+
+main{
+  flex: 1;
+  padding-right: 40px;
+}
+
+/* aside {
+  width: 250px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside nav ul li {
+  margin-bottom: 15px;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+aside nav ul li a:hover {
+  color: #ffe341;
+} */
